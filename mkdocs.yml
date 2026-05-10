@@ -1,9 +1,9 @@
 site_name: Knowledge Engineering — Building Intelligent Systems
 site_description: A complete course on Knowledge Engineering for IT professionals
 site_author: Knowledge Engineering Course
-site_url: https://Shaileshgnaik.github.io/ke-course
-repo_url: https://github.com/Shaileshgnaik/ke-course
-repo_name: Shaileshgnaik/ke-course
+site_url: https://Shaileshgnaik.github.io/ke-course.github.io
+repo_url: https://github.com/Shaileshgnaik/ke-course.github.io
+repo_name: Shaileshgnaik/ke-course.github.io
 
 theme:
   name: material
