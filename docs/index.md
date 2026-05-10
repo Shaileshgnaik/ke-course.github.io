@@ -110,10 +110,6 @@ IT Fast-Track → Parts 1 (overview) + 3 + 6 + 7 + 8
 
 ## Start Learning
 
-<div style="text-align:center; margin-top: 2rem;">
-
 [**Begin with Part 1: Foundations →**](part1/index.md){ .md-button .md-button--primary }
 &nbsp;&nbsp;
 [**View Full Course Overview →**](course-overview.md){ .md-button }
-
-</div>
