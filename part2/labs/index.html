@@ -1,0 +1,2344 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A complete course on Knowledge Engineering for IT professionals">
+      
+      
+        <meta name="author" content="Knowledge Engineering Course">
+      
+      
+        <link rel="canonical" href="https://Shaileshgnaik.github.io/ke-course.github.io/part2/labs/">
+      
+      
+        <link rel="prev" href="../module-2-5/">
+      
+      
+        <link rel="next" href="../slides/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Labs - Knowledge Engineering — Building Intelligent Systems</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#part-2-hands-on-labs" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Knowledge Engineering — Building Intelligent Systems" class="md-header__button md-logo" aria-label="Knowledge Engineering — Building Intelligent Systems" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Knowledge Engineering — Building Intelligent Systems
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Labs
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Shaileshgnaik/ke-course.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Shaileshgnaik/ke-course.github.io
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../course-overview/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Course Overview
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../part1/" class="md-tabs__link">
+          
+  
+  
+  Part 1: Foundations
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+  Part 2: Knowledge Acquisition
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Knowledge Engineering — Building Intelligent Systems" class="md-nav__button md-logo" aria-label="Knowledge Engineering — Building Intelligent Systems" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Knowledge Engineering — Building Intelligent Systems
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Shaileshgnaik/ke-course.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Shaileshgnaik/ke-course.github.io
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Course Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part 1: Foundations
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part 1: Foundations
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../part1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../part1/module-1-1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Module 1.1 — What is KE?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../part1/module-1-2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Module 1.2 — Types of Knowledge
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../part1/module-1-3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Module 1.3 — The KE Lifecycle
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../part1/module-1-4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Module 1.4 — Expert Systems
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../part1/module-1-5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Module 1.5 — The Bottleneck
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../part1/labs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Labs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../part1/slides/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Slide Outlines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../part1/assessment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quiz & Assessment
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part 2: Knowledge Acquisition
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part 2: Knowledge Acquisition
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../module-2-1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Module 2.1 — Elicitation Techniques
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../module-2-2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Module 2.2 — Document & Text Mining
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../module-2-3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Module 2.3 — ML for Acquisition
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../module-2-4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Module 2.4 — LLM Acquisition
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../module-2-5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Module 2.5 — Human-AI Pipeline
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Labs
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Labs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#lab-21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lab 2.1 — The Elicitation Challenge
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lab 2.1 — The Elicitation Challenge">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objective" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objective
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Setup
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#round-1-structured-interview-15-mins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Round 1 — Structured Interview (15 mins)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#round-2-think-aloud-15-mins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Round 2 — Think-Aloud (15 mins)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#round-3-laddering-10-mins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Round 3 — Laddering (10 mins)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#debrief-10-mins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Debrief (10 mins)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lab-22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lab 2.2 — Extract Rules from a Document
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lab 2.2 — Extract Rules from a Document">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objective_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objective
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#input-document" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Input Document
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-1-identify-linguistic-markers-10-mins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 1 — Identify Linguistic Markers (10 mins)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-2-extract-rules-20-mins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 2 — Extract Rules (20 mins)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-3-validate-10-mins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 3 — Validate (10 mins)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lab-23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lab 2.3 — Decision Tree Rule Discovery
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lab 2.3 — Decision Tree Rule Discovery">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objective_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objective
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-1-build-the-decision-tree-manually-20-mins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 1 — Build the Decision Tree Manually (20 mins)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-2-extract-rules-15-mins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 2 — Extract Rules (15 mins)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-3-identify-gaps-10-mins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 3 — Identify Gaps (10 mins)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lab-24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lab 2.4 — LLM Knowledge Extraction
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lab 2.4 — LLM Knowledge Extraction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objective_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objective
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-1-design-an-extraction-prompt-15-mins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 1 — Design an Extraction Prompt (15 mins)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-2-evaluate-sample-llm-output-15-mins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 2 — Evaluate Sample LLM Output (15 mins)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-3-gap-analysis-prompt-10-mins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 3 — Gap Analysis Prompt (10 mins)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lab-25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lab 2.5 — Design a Full Acquisition Plan
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lab 2.5 — Design a Full Acquisition Plan">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objective_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objective
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scenario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scenario
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deliverable-complete-acquisition-plan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deliverable: Complete Acquisition Plan
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../slides/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Slide Outlines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assessment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quiz & Assessment
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#lab-21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lab 2.1 — The Elicitation Challenge
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lab 2.1 — The Elicitation Challenge">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objective" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objective
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Setup
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#round-1-structured-interview-15-mins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Round 1 — Structured Interview (15 mins)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#round-2-think-aloud-15-mins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Round 2 — Think-Aloud (15 mins)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#round-3-laddering-10-mins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Round 3 — Laddering (10 mins)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#debrief-10-mins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Debrief (10 mins)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lab-22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lab 2.2 — Extract Rules from a Document
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lab 2.2 — Extract Rules from a Document">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objective_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objective
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#input-document" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Input Document
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-1-identify-linguistic-markers-10-mins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 1 — Identify Linguistic Markers (10 mins)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-2-extract-rules-20-mins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 2 — Extract Rules (20 mins)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-3-validate-10-mins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 3 — Validate (10 mins)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lab-23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lab 2.3 — Decision Tree Rule Discovery
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lab 2.3 — Decision Tree Rule Discovery">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objective_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objective
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-1-build-the-decision-tree-manually-20-mins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 1 — Build the Decision Tree Manually (20 mins)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-2-extract-rules-15-mins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 2 — Extract Rules (15 mins)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-3-identify-gaps-10-mins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 3 — Identify Gaps (10 mins)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lab-24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lab 2.4 — LLM Knowledge Extraction
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lab 2.4 — LLM Knowledge Extraction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objective_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objective
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-1-design-an-extraction-prompt-15-mins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 1 — Design an Extraction Prompt (15 mins)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-2-evaluate-sample-llm-output-15-mins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 2 — Evaluate Sample LLM Output (15 mins)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-3-gap-analysis-prompt-10-mins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 3 — Gap Analysis Prompt (10 mins)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lab-25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lab 2.5 — Design a Full Acquisition Plan
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lab 2.5 — Design a Full Acquisition Plan">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objective_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objective
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scenario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scenario
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deliverable-complete-acquisition-plan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deliverable: Complete Acquisition Plan
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="part-2-hands-on-labs">Part 2 — Hands-On Labs<a class="headerlink" href="#part-2-hands-on-labs" title="Permanent link">&para;</a></h1>
+<hr />
+<h2 id="lab-21">Lab 2.1 — The Elicitation Challenge<a class="headerlink" href="#lab-21" title="Permanent link">&para;</a></h2>
+<p><strong>Module:</strong> 2.1 — Knowledge Elicitation Techniques
+<strong>Duration:</strong> 50 minutes | <strong>Format:</strong> Pairs</p>
+<h3 id="objective">Objective<a class="headerlink" href="#objective" title="Permanent link">&para;</a></h3>
+<p>Practice 3 elicitation techniques back-to-back and compare the quality of knowledge extracted by each.</p>
+<h3 id="setup">Setup<a class="headerlink" href="#setup" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Person A = Domain Expert (use your real work experience)</li>
+<li>Person B = Knowledge Engineer</li>
+</ul>
+<hr />
+<h3 id="round-1-structured-interview-15-mins">Round 1 — Structured Interview <em>(15 mins)</em><a class="headerlink" href="#round-1-structured-interview-15-mins" title="Permanent link">&para;</a></h3>
+<p>Use only these question types:</p>
+<ol>
+<li><em>"What is the most common decision you make in your domain?"</em></li>
+<li><em>"Walk me through a recent example of that decision."</em></li>
+<li><em>"What factors do you consider? List them in priority order."</em></li>
+<li><em>"What would make you decide differently?"</em></li>
+</ol>
+<p>After 15 minutes, write down: How many concrete IF-THEN rules could you extract?</p>
+<hr />
+<h3 id="round-2-think-aloud-15-mins">Round 2 — Think-Aloud <em>(15 mins)</em><a class="headerlink" href="#round-2-think-aloud-15-mins" title="Permanent link">&para;</a></h3>
+<p>Give the expert a real task from their domain (e.g. review an architecture diagram, diagnose a problem, evaluate an option).</p>
+<p>Expert narrates their thinking in real time while working. KE records key observations.</p>
+<p>After 15 minutes, write down: How many rules emerged that DIDN'T come up in Round 1?</p>
+<hr />
+<h3 id="round-3-laddering-10-mins">Round 3 — Laddering <em>(10 mins)</em><a class="headerlink" href="#round-3-laddering-10-mins" title="Permanent link">&para;</a></h3>
+<p>Take the most interesting rule from Round 1 or 2. Apply the Why/How ladder:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Start: &quot;You said you [X] in this situation.&quot;
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>→ &quot;Why do you do X rather than Y?&quot;
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>→ &quot;Why is that important?&quot;
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>→ &quot;How do you know when to stop doing X?&quot;
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>→ &quot;What would be the exception to this?&quot;
+</code></pre></div>
+<hr />
+<h3 id="debrief-10-mins">Debrief <em>(10 mins)</em><a class="headerlink" href="#debrief-10-mins" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Question</th>
+<th>Your Answer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Which technique gave the richest rules?</td>
+<td></td>
+</tr>
+<tr>
+<td>Which technique surfaced tacit knowledge?</td>
+<td></td>
+</tr>
+<tr>
+<td>What would you have missed with interviews alone?</td>
+<td></td>
+</tr>
+<tr>
+<td>What follow-up sessions would you plan?</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="lab-22">Lab 2.2 — Extract Rules from a Document<a class="headerlink" href="#lab-22" title="Permanent link">&para;</a></h2>
+<p><strong>Module:</strong> 2.2 — Document &amp; Text Mining
+<strong>Duration:</strong> 40 minutes | <strong>Format:</strong> Individual</p>
+<h3 id="objective_1">Objective<a class="headerlink" href="#objective_1" title="Permanent link">&para;</a></h3>
+<p>Manually apply the document mining pipeline to a real text and extract structured rules.</p>
+<h3 id="input-document">Input Document<a class="headerlink" href="#input-document" title="Permanent link">&para;</a></h3>
+<p>Read this excerpt from a fictional cloud architecture guideline:</p>
+<hr />
+<p><em>"When designing a new microservices architecture, teams should always implement an API gateway as the single entry point for external traffic. The gateway must enforce authentication and rate limiting before requests reach any downstream service.</em></p>
+<p><em>For database selection: if the application requires ACID transactions and data relationships are complex, use a relational database such as Azure SQL or AWS RDS. If the primary access pattern is key-value lookups with throughput exceeding 10,000 requests per second, DynamoDB or Cosmos DB should be preferred.</em></p>
+<p><em>All services must implement health check endpoints. If a service fails three consecutive health checks, it should be automatically removed from the load balancer pool. Services should never be deployed to production without passing the full integration test suite.</em></p>
+<p><em>For cost optimisation: when a workload runs for less than 15 minutes and is triggered by events, Lambda or Azure Functions is preferred over container-based solutions. Long-running batch processes exceeding 15 minutes should use Fargate or Azure Container Instances instead."</em></p>
+<hr />
+<h3 id="task-1-identify-linguistic-markers-10-mins">Task 1 — Identify Linguistic Markers <em>(10 mins)</em><a class="headerlink" href="#task-1-identify-linguistic-markers-10-mins" title="Permanent link">&para;</a></h3>
+<p>Highlight every word that signals a rule:
+- Obligation: <code>must</code>, <code>should</code>, <code>always</code>, <code>never</code>, <code>required</code>
+- Condition: <code>if</code>, <code>when</code>, <code>exceeds</code>, <code>fails</code>
+- Action: <code>use</code>, <code>implement</code>, <code>deploy</code>, <code>prefer</code></p>
+<hr />
+<h3 id="task-2-extract-rules-20-mins">Task 2 — Extract Rules <em>(20 mins)</em><a class="headerlink" href="#task-2-extract-rules-20-mins" title="Permanent link">&para;</a></h3>
+<p>Convert each identified rule into structured format:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Rule R[n]:
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>Type: [HARD / SOFT / CONSTRAINT / BEST_PRACTICE]
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>IF:   [conditions]
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>THEN: [action or recommendation]
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>Source: &quot;[exact quote from document]&quot;
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>Confidence: [HIGH / MEDIUM / LOW]
+</code></pre></div>
+<p>How many rules can you extract from the passage?</p>
+<hr />
+<h3 id="task-3-validate-10-mins">Task 3 — Validate <em>(10 mins)</em><a class="headerlink" href="#task-3-validate-10-mins" title="Permanent link">&para;</a></h3>
+<p>Review your rules and answer:</p>
+<ol>
+<li>Which rules might be outdated in today's cloud landscape?</li>
+<li>Which rules are too vague to be useful as written?</li>
+<li>What follow-up questions would you ask an expert?</li>
+</ol>
+<details class="success">
+<summary>Sample Answer — Expected Rules</summary>
+<p>R1: IF traffic_type = external THEN implement API_gateway (HARD)
+R2: IF api_gateway THEN enforce auth + rate_limiting (HARD)
+R3: IF ACID_required AND complex_relations THEN use relational_DB (SOFT)
+R4: IF access_pattern = key-value AND throughput &gt; 10000_rps THEN prefer DynamoDB/CosmosDB (SOFT)
+R5: ALL services MUST implement health_check (HARD)
+R6: IF health_checks_failed &gt;= 3 THEN remove from load_balancer (HARD)
+R7: NEVER deploy to production WITHOUT integration_tests_passed (CONSTRAINT)
+R8: IF duration &lt; 15min AND trigger = event THEN prefer Lambda/Functions (SOFT)
+R9: IF batch = true AND duration &gt; 15min THEN use Fargate/ACI (SOFT)</p>
+</details>
+<hr />
+<h2 id="lab-23">Lab 2.3 — Decision Tree Rule Discovery<a class="headerlink" href="#lab-23" title="Permanent link">&para;</a></h2>
+<p><strong>Module:</strong> 2.3 — ML for Knowledge Acquisition
+<strong>Duration:</strong> 45 minutes | <strong>Format:</strong> Individual</p>
+<h3 id="objective_2">Objective<a class="headerlink" href="#objective_2" title="Permanent link">&para;</a></h3>
+<p>Build a simple decision tree from historical data and extract readable rules.</p>
+<h3 id="dataset">Dataset<a class="headerlink" href="#dataset" title="Permanent link">&para;</a></h3>
+<p>You have 12 historical cloud storage decisions from an architect:</p>
+<table>
+<thead>
+<tr>
+<th>Data Type</th>
+<th>Transactions</th>
+<th>Global</th>
+<th>Throughput</th>
+<th>Expert Chose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Structured</td>
+<td>Yes</td>
+<td>No</td>
+<td>Low</td>
+<td>Azure SQL</td>
+</tr>
+<tr>
+<td>Unstructured</td>
+<td>No</td>
+<td>No</td>
+<td>Medium</td>
+<td>Azure Blob</td>
+</tr>
+<tr>
+<td>Key-Value</td>
+<td>No</td>
+<td>Yes</td>
+<td>High</td>
+<td>Cosmos DB</td>
+</tr>
+<tr>
+<td>Structured</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Medium</td>
+<td>Cosmos DB</td>
+</tr>
+<tr>
+<td>Unstructured</td>
+<td>No</td>
+<td>No</td>
+<td>Low</td>
+<td>Azure Blob</td>
+</tr>
+<tr>
+<td>Key-Value</td>
+<td>No</td>
+<td>No</td>
+<td>High</td>
+<td>DynamoDB</td>
+</tr>
+<tr>
+<td>Structured</td>
+<td>No</td>
+<td>No</td>
+<td>Low</td>
+<td>PostgreSQL</td>
+</tr>
+<tr>
+<td>Key-Value</td>
+<td>No</td>
+<td>Yes</td>
+<td>Very High</td>
+<td>DynamoDB</td>
+</tr>
+<tr>
+<td>Structured</td>
+<td>Yes</td>
+<td>No</td>
+<td>High</td>
+<td>Azure SQL</td>
+</tr>
+<tr>
+<td>Unstructured</td>
+<td>No</td>
+<td>Yes</td>
+<td>High</td>
+<td>S3</td>
+</tr>
+<tr>
+<td>Key-Value</td>
+<td>No</td>
+<td>No</td>
+<td>Low</td>
+<td>Redis</td>
+</tr>
+<tr>
+<td>Structured</td>
+<td>No</td>
+<td>Yes</td>
+<td>Medium</td>
+<td>Cosmos DB</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="task-1-build-the-decision-tree-manually-20-mins">Task 1 — Build the Decision Tree Manually <em>(20 mins)</em><a class="headerlink" href="#task-1-build-the-decision-tree-manually-20-mins" title="Permanent link">&para;</a></h3>
+<p>Draw a decision tree that correctly classifies all 12 decisions.</p>
+<p>Start with: <em>"What is the first question that best splits the data?"</em></p>
+<p>Hint: Start with <strong>Data Type</strong> as the root split.</p>
+<hr />
+<h3 id="task-2-extract-rules-15-mins">Task 2 — Extract Rules <em>(15 mins)</em><a class="headerlink" href="#task-2-extract-rules-15-mins" title="Permanent link">&para;</a></h3>
+<p>Convert each leaf of your tree into an IF-THEN rule:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Rule R[n]:
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>IF   data_type = [X]
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>     AND [other conditions]
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>THEN recommend = [service]
+</code></pre></div>
+<hr />
+<h3 id="task-3-identify-gaps-10-mins">Task 3 — Identify Gaps <em>(10 mins)</em><a class="headerlink" href="#task-3-identify-gaps-10-mins" title="Permanent link">&para;</a></h3>
+<ol>
+<li>What scenarios does your tree NOT cover?</li>
+<li>What questions would you ask the expert to cover those gaps?</li>
+<li>Are there any rules in your tree that seem surprising? Why?</li>
+</ol>
+<hr />
+<h2 id="lab-24">Lab 2.4 — LLM Knowledge Extraction<a class="headerlink" href="#lab-24" title="Permanent link">&para;</a></h2>
+<p><strong>Module:</strong> 2.4 — Knowledge Acquisition from LLMs
+<strong>Duration:</strong> 40 minutes | <strong>Format:</strong> Individual</p>
+<h3 id="objective_3">Objective<a class="headerlink" href="#objective_3" title="Permanent link">&para;</a></h3>
+<p>Design effective prompts for LLM-based knowledge extraction and evaluate the outputs critically.</p>
+<h3 id="task-1-design-an-extraction-prompt-15-mins">Task 1 — Design an Extraction Prompt <em>(15 mins)</em><a class="headerlink" href="#task-1-design-an-extraction-prompt-15-mins" title="Permanent link">&para;</a></h3>
+<p>You need to extract knowledge from a 50-page architecture best practices guide.</p>
+<p>Write a complete LLM prompt that:
+- Instructs the LLM to extract IF-THEN rules
+- Requires source citation for every rule
+- Asks for confidence rating
+- Handles uncertainty explicitly</p>
+<p>Use the template from Module 2.4 as a starting point, but customise it for a <strong>cloud architecture</strong> domain.</p>
+<hr />
+<h3 id="task-2-evaluate-sample-llm-output-15-mins">Task 2 — Evaluate Sample LLM Output <em>(15 mins)</em><a class="headerlink" href="#task-2-evaluate-sample-llm-output-15-mins" title="Permanent link">&para;</a></h3>
+<p>Review this LLM-generated rule and identify any problems:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Rule R_CLOUD_47:
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>Type: HARD_RULE
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>IF:   application handles sensitive healthcare data
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>THEN: must use HIPAA-compliant cloud services
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>      and encrypt all data at rest and in transit
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>Source: [Unable to find specific source — general best practice]
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>Confidence: HIGH
+</code></pre></div>
+<p>Answer:
+1. What is wrong with the Confidence rating here?
+2. What is wrong with the Source field?
+3. How would you handle this rule before adding it to the KB?
+4. What question would you ask a domain expert about this rule?</p>
+<hr />
+<h3 id="task-3-gap-analysis-prompt-10-mins">Task 3 — Gap Analysis Prompt <em>(10 mins)</em><a class="headerlink" href="#task-3-gap-analysis-prompt-10-mins" title="Permanent link">&para;</a></h3>
+<p>Write a prompt that asks an LLM to analyse this partial rule set and identify gaps:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>Existing rules:
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>R1: IF workload = event-driven AND volume = high THEN use Service Bus
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>R2: IF workload = request-reply AND latency &lt; 100ms THEN use REST
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>R3: IF batch = true AND size = large THEN use Storage Queue
+</code></pre></div>
+<p>Your prompt should ask the LLM to find: missing scenarios, potential conflicts, and questions for the domain expert.</p>
+<hr />
+<h2 id="lab-25">Lab 2.5 — Design a Full Acquisition Plan<a class="headerlink" href="#lab-25" title="Permanent link">&para;</a></h2>
+<p><strong>Module:</strong> 2.5 — Human-AI Collaborative Acquisition
+<strong>Duration:</strong> 60 minutes | <strong>Format:</strong> Team (2–3 people)</p>
+<h3 id="objective_4">Objective<a class="headerlink" href="#objective_4" title="Permanent link">&para;</a></h3>
+<p>Design a complete knowledge acquisition plan for a real scenario using the full Human-AI pipeline.</p>
+<h3 id="scenario">Scenario<a class="headerlink" href="#scenario" title="Permanent link">&para;</a></h3>
+<p>Your company wants to build a KE system that automates cloud architecture recommendations for a professional services firm. You have access to:</p>
+<ul>
+<li>200 past architecture documents (Word/PDF)</li>
+<li>3 senior architects (available for max 4 hours total)</li>
+<li>500 historical architecture decisions in a spreadsheet</li>
+<li>2 junior architects who can help with validation</li>
+</ul>
+<p><strong>Constraints:</strong>
+- Must be complete in 3 weeks
+- Cannot use more than 4 hours of senior architect time
+- Target: 100+ validated rules in the KB</p>
+<hr />
+<h3 id="deliverable-complete-acquisition-plan">Deliverable: Complete Acquisition Plan<a class="headerlink" href="#deliverable-complete-acquisition-plan" title="Permanent link">&para;</a></h3>
+<p>Fill in each phase:</p>
+<p><strong>Phase 1 — Document Mining</strong></p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Your Answer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>What documents to process first (prioritise)?</td>
+<td></td>
+</tr>
+<tr>
+<td>What LLM prompt will you use?</td>
+<td></td>
+</tr>
+<tr>
+<td>Expected rule yield?</td>
+<td></td>
+</tr>
+<tr>
+<td>Who does this work?</td>
+<td></td>
+</tr>
+<tr>
+<td>Timeline?</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Phase 2 — Gap Analysis</strong></p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Your Answer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>How will you identify gaps?</td>
+<td></td>
+</tr>
+<tr>
+<td>What are the likely gaps in architecture docs?</td>
+<td></td>
+</tr>
+<tr>
+<td>How long will expert review of gaps take?</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Phase 3 — Targeted Expert Sessions</strong></p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Your Answer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>How many sessions? (remember: 4 hour total limit)</td>
+<td></td>
+</tr>
+<tr>
+<td>Which technique for each session?</td>
+<td></td>
+</tr>
+<tr>
+<td>What topics will each session cover?</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Phase 4 — ML Validation</strong></p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Your Answer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>What ML technique will you use on the 500 decisions?</td>
+<td></td>
+</tr>
+<tr>
+<td>What will you do with discrepancies found?</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Phase 5 — Expert Review</strong></p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Your Answer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Who reviews (junior or senior architects)?</td>
+<td></td>
+</tr>
+<tr>
+<td>How many rules do you expect to validate?</td>
+<td></td>
+</tr>
+<tr>
+<td>What are your accept/reject criteria?</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Present your plan (5 minutes). Highlight: biggest risk, key assumption, first milestone.</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../module-2-5/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Module 2.5 — Human-AI Pipeline">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Module 2.5 — Human-AI Pipeline
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../slides/" class="md-footer__link md-footer__link--next" aria-label="Next: Slide Outlines">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Slide Outlines
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/Shaileshgnaik/ke-course" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "content.code.copy", "content.tabs.link", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
