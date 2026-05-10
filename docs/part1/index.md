@@ -20,11 +20,11 @@
 
 | Module | Title | Duration |
 |---|---|---|
-| [1.1](module-1-1.md) | What is Knowledge Engineering? | ~60 min |
-| [1.2](module-1-2.md) | Types of Knowledge | ~60 min |
-| [1.3](module-1-3.md) | The KE Lifecycle | ~75 min |
-| [1.4](module-1-4.md) | Expert Systems — The Origin of KE | ~75 min |
-| [1.5](module-1-5.md) | The Knowledge Acquisition Bottleneck | ~60 min |
+| [1.1](module-1-1.md) | [What is Knowledge Engineering?](module-1-1.md) | ~60 min |
+| [1.2](module-1-2.md) | [Types of Knowledge](module-1-2.md) | ~60 min |
+| [1.3](module-1-3.md) | [The KE Lifecycle](module-1-3.md) | ~75 min |
+| [1.4](module-1-4.md) | [Expert Systems — The Origin of KE](module-1-4.md) | ~75 min |
+| [1.5](module-1-5.md) | [The Knowledge Acquisition Bottleneck](module-1-5.md) | ~60 min |
 
 ---
 
