@@ -75,6 +75,16 @@ nav:
     - Labs: part1/labs.md
     - Slide Outlines: part1/slides.md
     - Quiz & Assessment: part1/assessment.md
+  - "Part 2: Knowledge Acquisition":
+    - Overview: part2/index.md
+    - "Module 2.1 — Elicitation Techniques": part2/module-2-1.md
+    - "Module 2.2 — Document & Text Mining": part2/module-2-2.md
+    - "Module 2.3 — ML for Acquisition": part2/module-2-3.md
+    - "Module 2.4 — LLM Acquisition": part2/module-2-4.md
+    - "Module 2.5 — Human-AI Pipeline": part2/module-2-5.md
+    - Labs: part2/labs.md
+    - Slide Outlines: part2/slides.md
+    - Quiz & Assessment: part2/assessment.md
 
 extra:
   social:

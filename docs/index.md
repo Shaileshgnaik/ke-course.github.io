@@ -46,8 +46,10 @@ What KE is, where it came from, types of knowledge, the KE lifecycle, expert sys
 </div>
 
 <div class="part-card" markdown>
-### Part 2 — Knowledge Acquisition <span class="badge badge-coming">Coming Soon</span>
+### Part 2 — Knowledge Acquisition <span class="badge badge-available">Available</span>
 Elicitation techniques, document mining, NLP extraction, using LLMs to accelerate acquisition.
+
+[Start Part 2 →](part2/index.md)
 </div>
 
 <div class="part-card" markdown>
